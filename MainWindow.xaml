@@ -1,0 +1,57 @@
+﻿<Window x:Class="SharpCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SharpCalc"
+        mc:Ignorable="d"
+        Title="SharpCalc" Height="500" Width="280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <!-- Numeric Buttons -->
+        <Button x:Name="btn7" FontSize="18" Grid.Row="3" Grid.Column="0" Click="Btn7_Click">7</Button>
+        <Button x:Name="btn8" FontSize="18" Grid.Row="3" Grid.Column="1" Click="Btn8_Click">8</Button>
+        <Button x:Name="btn9" FontSize="18" Grid.Row="3" Grid.Column="2" Click="Btn9_Click">9</Button>
+        <Button x:Name="btn4" FontSize="18" Grid.Row="4" Grid.Column="0" Click="Btn4_Click">4</Button>
+        <Button x:Name="btn5" FontSize="18" Grid.Row="4" Grid.Column="1" Click="Btn5_Click">5</Button>
+        <Button x:Name="btn6" FontSize="18" Grid.Row="4" Grid.Column="2" Click="Btn6_Click">6</Button>
+        <Button x:Name="btn1" FontSize="18" Grid.Row="5" Grid.Column="0" Click="Btn1_Click">1</Button>
+        <Button x:Name="btn2" FontSize="18" Grid.Row="5" Grid.Column="1" Click="Btn2_Click">2</Button>
+        <Button x:Name="btn3" FontSize="18" Grid.Row="5" Grid.Column="2" Click="Btn3_Click">3</Button>
+        <Button x:Name="btn0" FontSize="18" Grid.Row="6" Grid.Column="1" Click="Btn0_Click">0</Button>
+        <!-- Operational Buttons -->
+        <Button x:Name="btnAdd" FontSize="18" Grid.Row="2" Grid.Column="3" Click="BtnAdd_Click">+</Button>
+        <Button x:Name="btnSubtract" FontSize="18" Grid.Row="3" Grid.Column="3" Click="BtnSubtract_Click">-</Button>
+        <Button x:Name="btnMultiply" FontSize="18" Grid.Row="4" Grid.Column="3" Click="BtnMultiply_Click">*</Button>
+        <Button x:Name="btnDivide" FontSize="18" Grid.Row="5" Grid.Column="3" Click="BtnDivide_Click">/</Button>
+        <Button x:Name="btnEqual" FontSize="18" Grid.Row="6" Grid.Column="3" Click="BtnEqual_Click">=</Button>
+        <!-- Conversion Buttons -->
+        <Button x:Name="btnHex" FontSize="16" Grid.Row="1" Grid.Column="0" Click="BtnHex_Click">Hex</Button>
+        <Button x:Name="btnDec" FontSize="16" Background="DodgerBlue" Grid.Row="1" Grid.Column="1" Click="BtnDec_Click">Dec</Button>
+        <Button x:Name="btnOct" FontSize="16" Grid.Row="1" Grid.Column="2" Click="BtnOct_Click">Oct</Button>
+        <Button x:Name="btnBin" FontSize="16" Grid.Row="1" Grid.Column="3" Click="BtnBin_Click">Bin</Button>
+        <!-- Clear Buttons -->
+        <Button x:Name="btnCE" FontSize="18" Grid.Row="2" Grid.Column="0" Click="BtnCE_Click">CE</Button>
+        <Button x:Name="btnC" FontSize="18" Grid.Row="2" Grid.Column="1" Click="BtnC_Click">C</Button>
+        <Button x:Name="btnBackspace" FontSize="18" Grid.Row="2" Grid.Column="2" Content="&lt;=" Click="BtnBackspace_Click"></Button>
+        <Button x:Name="btnExit" FontSize="16" Grid.Row="6" Grid.Column="0" Click="BtnExit_Click">Exit</Button>
+        <!-- Positive/Negative Buttons -->
+        <Button x:Name="btnPositiveNegative" FontSize="18" Grid.Row="6" Grid.Column="2" Click="BtnPositiveNegative_Click">+-</Button>
+        <!-- Display Box -->
+        <TextBox x:Name="displayBox" IsReadOnly="True" TextAlignment="Right" FontSize="30" BorderThickness="0" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">0</TextBox>
+    </Grid>
+</Window>
