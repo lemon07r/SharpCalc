@@ -7,7 +7,7 @@ Features:
 
 -All common integer operations (addition, subtraction, multiplication and division)
 
--Number System converstions (decimal, hexidecimal, binary and octal)
+-Number System conversions (decimal, hexadecimal, binary and octal)
 
 -Positive and negative integer math
 
